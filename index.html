@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/script.js"></script>
+    <title>Contacto</title>
+</head>
+
+<body>
+    <section class="form_wrap">
+
+        <section class="contact_info">
+            <section class="info_title">
+
+                <span class="fas fa-car"></span>
+                <h2>Informacion<br>De Contacto</h2>
+            </section>
+            <section class="info_items">
+                <p><span class="fa fa-envelope"></span>Ford.contact@gmail.com</p>
+                <p><span class="fa fa-phone"></span>+(52) 417-100-1010</p>
+
+            </section>
+        </section>
+
+
+        <div class="user_info">
+            <form action="enviaar.php" method="POST" class="form_contact">
+                <table>
+
+                    <tr>
+
+                        <td> <input type="text" placeholder="Nombre" name="nombre" required> </td>
+                    </tr>
+                    <tr>
+
+                        <td> <input type="phone" placeholder="Telefono" name="telefono" required> </td>
+                    </tr>
+                    <tr>
+
+                        <td> <input type="text" placeholder="Correo Electronico" name="correo" required> </td>
+                    </tr>
+                    <tr>
+
+                        <td> <input type="text" placeholder="Escribe tu mensaje" name="mensaje" required> </td>
+                    </tr>
+                    <tr>
+
+
+                        <td>
+                            <select name="tpmensaje" required>
+                                <option selected hidden value="">Tipo de mensaje</option>
+                                <option value="">Agradecimiento</option>
+                                <option value="">Aportacion</option>
+                                <option value="">Queja</option>
+                                <option value="">Mensaje</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" value="ENVIAR" name="enviar" />
+                        </td>
+                    </tr>
+
+        </div>
+        </table>
+
+        </form>
+
+
+</body>
+
+</html>
